@@ -2,7 +2,7 @@
 
 ![Hello!](./header.jpg)
 
-🕑︎ Montreal - Canada (EST) • ✉️ [bleu@bleubleu.xyz](mailto:bleu@bleubleu.xyz) • 🌐 FR / EN
+🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) • ✉️&nbsp;[bleu@bleubleu.xyz](mailto:bleu@bleubleu.xyz) • 🌐&nbsp;FR&nbsp;/&nbsp;EN
 
 </div>
 
