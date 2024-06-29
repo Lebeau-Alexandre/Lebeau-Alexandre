@@ -5,6 +5,7 @@
 🕑︎ Montreal - Canada (EST) • ✉️ [bleu@bleubleu.xyz](mailto:bleu@bleubleu.xyz) • 🌐 FR / EN
 
 </div>
+
 ---
 
 - 🔭 I’m currently working at [DashQ](https://www.linkedin.com/company/dashq/posts/?feedView=all). Optimizing multifamily leasing with AI. The Enterprise solution for all renter interactions, from inquiry to renewal.
