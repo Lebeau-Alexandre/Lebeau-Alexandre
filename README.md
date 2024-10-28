@@ -16,7 +16,6 @@
 <div align="center">
 
 ## Interests
-These don't represent my skills sets. They are simply things that I really like!
 
 [![Duolingo](https://img.shields.io/badge/Duolingo-%234DC730.svg?style=for-the-badge&logo=Duolingo&logoColor=white)](https://www.duolingo.com/profile/lu_le_lu?via=share_profile_link)
 [![Tidal](https://img.shields.io/badge/tidal-00FFFF?style=for-the-badge&logo=tidal&logoColor=black)](https://tidal.com/browse/user/193657888)
