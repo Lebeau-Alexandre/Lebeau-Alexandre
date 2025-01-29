@@ -2,13 +2,18 @@
 
 ![Hello!](./header.jpg)
 
-🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) • ✉️&nbsp;[alexandre@lebeau.engineer](mailto:alexandre@lebeau.engineer) • 🌐&nbsp;FR&nbsp;/&nbsp;EN
+🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) •
+✉️&nbsp;[alexandre@lebeau.engineer](mailto:alexandre@lebeau.engineer) •
+🌐&nbsp;FR&nbsp;/&nbsp;EN
 
 </div>
 
 ---
 
-- 🔭 I’m currently working at [DashQ](https://www.linkedin.com/company/dashq/posts/?feedView=all). Optimizing multifamily leasing with AI. The Enterprise solution for all renter interactions, from inquiry to renewal.
+- 🔭 I’m currently working at
+  [DashQ](https://www.linkedin.com/company/dashq/posts/?feedView=all).
+  Optimizing multifamily leasing with AI. The Enterprise solution for all renter
+  interactions, from inquiry to renewal.
 - 🌱 I’m passionate about IOT and UX.
 
 ---
@@ -33,6 +38,9 @@
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-</div>
 
-Last updated: 2025-01-29 23:00
+</div>
+<details>
+    <summary>Last updated</summary>
+    Last updated: 2025-01-29 23:00
+</details>
