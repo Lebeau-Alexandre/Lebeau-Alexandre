@@ -2,7 +2,7 @@
 
 ![Hello!](./header.jpg)
 
-🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) • ✉️&nbsp;[lebeau@bleubleu.xyz](mailto:lebeau@bleubleu.xyz) • 🌐&nbsp;FR&nbsp;/&nbsp;EN
+🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) • ✉️&nbsp;[alexandre@lebeau.engineer](mailto:alexandre@lebeau.engineer) • 🌐&nbsp;FR&nbsp;/&nbsp;EN
 
 </div>
 
