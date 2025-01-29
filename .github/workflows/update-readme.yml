@@ -35,18 +35,16 @@ jobs:
               content = ''
           
           # Get current date
-          today = datetime.datetime.now().strftime('%Y-%m-%d')
+          today = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
           
-          # Add or update date
-          if 'Last updated:' in content:
-              lines = content.split('\n')
-              for i, line in enumerate(lines):
-                  if 'Last updated:' in line:
-                      lines[i] = f'Last updated: {today}'
-                      break
-              new_content = '\n'.join(lines)
-          else:
-              new_content = f'Last updated: {today}\n\n{content}'
+          # Remove old date line if it exists at the end
+          lines = content.rstrip().split('\n')
+          if lines and 'Last updated:' in lines[-1]:
+              lines.pop()
+          content = '\n'.join(lines)
+          
+          # Add new date at the end
+          new_content = f'{content}\n\nLast updated: {today}'
           
           # Write back to README
           with open('README.md', 'w') as file:
