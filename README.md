@@ -1,5 +1,3 @@
-Last updated: 2025-01-29
-
 <div align="center">
 
 ![Hello!](./header.jpg)
