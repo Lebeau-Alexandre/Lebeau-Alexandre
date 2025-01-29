@@ -1,0 +1,61 @@
+name: Update README with Date
+
+on:
+  schedule:
+    # Runs every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # or your default branch
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Update README
+        run: |
+          python -c "
+          import datetime
+          
+          # Read the current README
+          try:
+              with open('README.md', 'r') as file:
+                  content = file.read()
+          except FileNotFoundError:
+              content = ''
+          
+          # Get current date
+          today = datetime.datetime.now().strftime('%Y-%m-%d')
+          
+          # Add or update date
+          if 'Last updated:' in content:
+              lines = content.split('\n')
+              for i, line in enumerate(lines):
+                  if 'Last updated:' in line:
+                      lines[i] = f'Last updated: {today}'
+                      break
+              new_content = '\n'.join(lines)
+          else:
+              new_content = f'Last updated: {today}\n\n{content}'
+          
+          # Write back to README
+          with open('README.md', 'w') as file:
+              file.write(new_content)
+          "
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "alexandre.lebeau.1@ens.etsmtl.ca"
+          git config --global user.name "Lebeau-Alexandre"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with current date" && git push)
