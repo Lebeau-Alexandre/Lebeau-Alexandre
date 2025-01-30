@@ -27,21 +27,18 @@ jobs:
           python -c "
           import datetime
           import re
-          
-          # Read the current README
+
           with open('README.md', 'r') as file:
               content = file.read()
-          
-          # Get current date
+
           today = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
-          
-          # Find and replace the date within the details tag
-          pattern = r'(<details>\n<summary>Last updated</summary>\n Last updated:) .*?(\n</details>)'
-          replacement = r'\g<1> ' + today + r'\g<2>'
-          
+
+          # More flexible regex to match variations in formatting
+          pattern = r'(<details>\s*<summary>Last updated</summary>\s*Last updated:).*?(\s*</details>)'
+          replacement = r'\1 ' + today + r'\2'
+
           new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-          
-          # Write back to README
+
           with open('README.md', 'w') as file:
               file.write(new_content)
           "
