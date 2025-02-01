@@ -1,7 +1,7 @@
 name: Update README with Date
 
 on:
-  schedule:
+  schedule: # For Human Resources purposes.
     - cron: '*/60 * * * *'
   workflow_dispatch: # Allows manual trigger
 
