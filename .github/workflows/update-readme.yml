@@ -1,9 +1,8 @@
 name: Update README with Date
 
 on:
-  schedule:
-    # Runs every 5 minutes
-    - cron: '*/5 * * * *'
+  schedule: # For human resources purposes.
+    - cron: '0 * * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -28,16 +27,18 @@ jobs:
           import datetime
           import re
 
-          with open('.github/workflows/update-readme.yml', 'r') as file:
+          with open('README.md', 'r') as file:
               content = file.read()
 
-          # More flexible regex to match cron schedule
-          pattern = r'(- cron: )\'[^\']*\''
-          replacement = r'\1\'{{ range(0, 60) | random }} {{ range(0, 24) | random }} * * *\''
+          today = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+
+          # More flexible regex to match variations in formatting
+          pattern = r'(<details>\s*<summary>Last updated</summary>\s*Last updated:).*?(\s*</details>)'
+          replacement = r'\1 ' + today + r'\2'
 
           new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-          with open('.github/workflows/update-readme.yml', 'w') as file:
+          with open('README.md', 'w') as file:
               file.write(new_content)
           "
 
@@ -46,7 +47,7 @@ jobs:
           git config --global user.email "alexandre.lebeau.1@ens.etsmtl.ca"
           git config --global user.name "Lebeau-Alexandre"
 
-          git add .github/workflows/update-readme.yml
+          git add README.md
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
