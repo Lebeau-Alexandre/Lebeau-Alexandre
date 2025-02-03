@@ -3,7 +3,7 @@ name: Update README with Date
 on:
   schedule:
     # Runs every 5 minutes
-    - cron: '*/60 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -31,10 +31,8 @@ jobs:
           with open('.github/workflows/update-readme.yml', 'r') as file:
               content = file.read()
 
-          
-
-          # More flexible regex to match variations in formatting
-          pattern = r'- cron: \'.*\')'
+          # More flexible regex to match cron schedule
+          pattern = r'(- cron: )\'[^\']*\''
           replacement = r'\1\'{{ range(0, 60) | random }} {{ range(0, 24) | random }} * * *\''
 
           new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
