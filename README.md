@@ -3,18 +3,15 @@
 ![Hello!](./header.jpg)
 
 🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) •
-✉️&nbsp;[alexandre@lebeau.engineer](mailto:alexandre@lebeau.engineer) •
+✉️&nbsp;[alexandre@lebeau.work](mailto:alexandre@lebeau.work) •
 🌐&nbsp;FR&nbsp;/&nbsp;EN
 
 </div>
 
 ---
 
-- 🔭 I’m currently working at
-  [DashQ](https://www.linkedin.com/company/dashq/posts/?feedView=all).
-  Optimizing multifamily leasing with AI. The Enterprise solution for all renter
-  interactions, from inquiry to renewal.
-- 🌱 I’m passionate about IOT and UX.
+- 🔭 Sole full-stack lead @ Anumau — Vue, REST APIs, Docker, CI/CD, 
+   observability. 2,000+ calls/mo via Twilio. Stripe Connect. 75–85% test coverage.
 
 ---
 
