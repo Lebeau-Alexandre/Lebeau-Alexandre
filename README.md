@@ -1,26 +1,41 @@
-<div align="center">
+<div>
 
 ![Hello!](./header.jpg)
 
-🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST) •
-✉️&nbsp;[alexandre@lebeau.work](mailto:alexandre@lebeau.work) •
-🌐&nbsp;FR&nbsp;/&nbsp;EN
+- 🕑︎&nbsp;Montreal&nbsp;-&nbsp;Canada (EST)
+- ✉️&nbsp;[alexandre@lebeau.work](mailto:alexandre@lebeau.work)
+- 🌐&nbsp;FR&nbsp;/&nbsp;EN
+- 🇨🇦 Canadian Citizen — TN Visa Eligible
 
 </div>
 
 ---
 
-- 🔭 Sole full-stack lead @ Anumau — Vue, REST APIs, Docker, CI/CD, 
-   observability. 2,000+ calls/mo via Twilio. Stripe Connect. 75–85% test coverage.
+# Anumau Platform — Architecture Overview
+
+Sole full-stack lead on greenfield pet-services platform (Vue.js + REST API + PostgreSQL). 🐱
+
+## Stack
+- Frontend: Vue.js, component-driven design, performance-optimized
+- Backend: RESTful API, relational data models, third-party integrations
+- DevOps: Docker, DigitalOcean, nginx reverse proxy, CI/CD
+- Observability: Prometheus + Grafana, automated background jobs
+- Payments: Stripe Connect with fraud-risk validations
+- Communications: Twilio-powered voice (2,000+ calls/mo)
+- Content: 120+ SEO articles authored
+
+## Metrics
+- 75–85% test coverage
+- Platform supports breeders, shelters, direct payment routing
+
+## My Role
+Owned everything from database design to deployment and monitoring.
 
 ---
 
 <div align="center">
 
 ## Interests
-
-[![Duolingo](https://img.shields.io/badge/Duolingo-%234DC730.svg?style=for-the-badge&logo=Duolingo&logoColor=white)](https://www.duolingo.com/profile/lu_le_lu?via=share_profile_link)
-[![Tidal](https://img.shields.io/badge/tidal-00FFFF?style=for-the-badge&logo=tidal&logoColor=black)](https://tidal.com/browse/user/193657888)
 
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
